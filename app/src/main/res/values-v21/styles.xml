@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- extend one of the Theme.AppCompat themes -->
+    <style name="Theme.MyTheme" parent="Theme.AppCompat.Light">
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/light_green_A200</item>
+        <item name="colorPrimaryDark">@color/purple_500</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BerryTextChat</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_chat">Chat</string>
+    <string name="text">This is message text</string>
+    <string name="timestamp">date in string format</string>
+    <string name="btn_send">Send</string>
+    <string name="exit">Exit</string>
+</resources>
