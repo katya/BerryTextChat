@@ -18,14 +18,12 @@ public enum MsgDataStore {
     INSTANCE;
 
     private MsgAdapter cursorAdapter = null;
-
-
-    private ArrayList<Message> dataSet = addStaticData();
+    private ArrayList<Message> dataSet;
     private Context activity;
 
 
     MsgDataStore() {
-        addStaticData();
+        dataSet = addStaticData();
 
     }
 
@@ -33,11 +31,6 @@ public enum MsgDataStore {
     {
         return INSTANCE;
     }
-
-    public void setRecyclerAdapter(MsgAdapter adapter){
-        cursorAdapter = adapter;
-    }
-
 
     private  static ArrayList<Message> addStaticData() {
         MsgDateFormatting formatting = new MsgDateFormatting(MsgDateFormatting.MSG_FULL_FORMAT);

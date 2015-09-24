@@ -70,4 +70,14 @@ public class MsgDateFormatting extends SimpleDateFormat{
         return day;
     }
 
+    public Date formatStringToDate(String str, String format){
+        SimpleDateFormat sdf = new SimpleDateFormat(format);
+        try {
+            return sdf.parse(str);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }
